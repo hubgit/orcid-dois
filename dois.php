@@ -22,7 +22,7 @@ foreach ($iterator as $fileinfo) {
 	}
 
 	$file = $fileinfo->getPathname();
-	print "$file\n";
+	//print "$file\n";
 
 	$doc = new DOMDocument;
 	$doc->load($file);
