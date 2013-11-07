@@ -29,7 +29,7 @@ foreach ($iterator as $fileinfo) {
 
 	$xpath = new DOMXPath($doc);
 	$xpath->registerNamespace('o', 'http://www.orcid.org/ns/orcid');
-	$nodes = $xpath->query('o:orcid-profile/o:orcid-activities/o:orcid-works/o:orcid-work/o:work-external-identifiers/o:work-external-identifier[o:work-external-identifier-type="doi"]/o:work-external-identifier-id');
+	$nodes = $xpath->query('o:orcid-profile/o:orcid-activities/o:orcid-works/o:orcid-work/o:work-external-identifiers/o:work-external-identifier[o:work-external-identifier-type="doi"]/o:work-external-identifier-id'); // LOL
 
 	if (!$nodes->length) {
 		continue;
