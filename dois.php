@@ -1,6 +1,6 @@
 <?php
 
-$output = fopen(__DIR__ . '/orcid-dois.csv', 'w');
+$output = gzopen(__DIR__ . '/orcid-dois.csv.gz', 'w');
 
 $i = 0;
 
